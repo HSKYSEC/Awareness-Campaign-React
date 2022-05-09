@@ -1,0 +1,365 @@
+html {
+  background-color: #2e2e38;
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Interstate;
+  src: url(EYInterstate-Light.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Interstate";
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+/**  IMAGES **/
+.logo {
+  display: block;
+  width: 5vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.module_logo {
+  display: flex;
+  width: 5vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  float: left;
+  justify-content: center;
+}
+
+.difficulty {
+  width: 5vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+
+.img-with-text {
+  text-align: center;
+}
+
+.img-with-text img {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: #ffe600;
+  margin-bottom: 5rem;
+}
+
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  color: #ffe600;
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+h5 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.container > * {
+  width: 100%;
+  flex-wrap: wrap;
+
+}
+
+.container{
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #ffe600;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #333333;
+  background-color: white;
+  float: left;
+}
+
+.btn-right {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #ffe600;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #333333;
+  background-color: white;
+  float: right;
+}
+
+.btn-small {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #ffe600;
+  margin-top: 3%;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #333333;
+  background-color: white;
+  float: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(255, 230, 0, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.btn-right:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(255, 230, 0, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.btn-small:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(255, 230, 0, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 1;
+}
+
+.page {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+}
+
+.language-select {
+  float: right;
+  margin-top: -35px;
+}
+
+.importantsurvey {
+  color: #ffe600;
+  margin-top: 5%;
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 450ms linear 250ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Memory Game */
+.img-fixed {
+  object-fit: cover;
+  height: 180px;
+  width: 190px;
+  float: left;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px 20px 20px 20px;
+  margin: 0.1%;
+}
+
+.img-fixed:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(255, 230, 0, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+select:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(255, 230, 0, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: #2e2e38;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid #2e2e38;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  float: left;
+  display: grid;
+  place-content: center;
+  
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 60ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: #2e2e38;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(0px, 0.05em) solid currentColor;
+  outline-offset: max(2px, 0.05em);
+}
+
+.light-bg2 {
+  background-color: #4c566a;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04aa6d;
+  cursor: pointer;
+}
+

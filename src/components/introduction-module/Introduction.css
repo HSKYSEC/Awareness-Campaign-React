@@ -1,0 +1,47 @@
+.container-header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+  } 
+.learn-explanation{
+    margin-bottom: 5%;
+    text-align: justify;
+}
+
+.btn{
+    float:left;
+}
+
+.btn-side {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #ffe600;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #333333;
+    background-color: white;  
+    float: right;
+  }
+  
+  .btn-side:hover {
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem 0 rgba(255,230,0, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn-side[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+
+  .important{
+    color: yellow;
+}
