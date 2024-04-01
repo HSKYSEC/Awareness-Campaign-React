@@ -2,6 +2,8 @@
 
 This project was developed during an internship to create an interactive quiz for employees to test their awareness level regarding security. The quiz provides multiple tests and examples where users can define and choose their security posture.
 
+![image](src/components/images/awareness.png)
+
 ## Technologies Used
 - React: Frontend framework for building the user interface.
 - Firebase: Backend service for real-time database and user authentication.
